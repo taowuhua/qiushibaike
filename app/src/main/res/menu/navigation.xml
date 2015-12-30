@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--单选项
+        android:checkableBehavior="single" 单选模式
+        android:checked="true"   默认选中
+    -->
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/item_1"
+            android:title="糗事"
+            android:checked="true"
+            android:icon="@mipmap/ic_launcher"
+            />
+        <item
+            android:id="@+id/item_2"
+            android:title="糗友圈"
+            android:icon="@mipmap/ic_launcher"
+            />
+        <item
+            android:id="@+id/item_3"
+            android:title="发现"
+            android:icon="@mipmap/ic_launcher"
+            />
+        <item
+            android:id="@+id/item_4"
+            android:title="小纸条"
+            android:icon="@mipmap/ic_launcher"
+            />
+    </group>
+
+    <!--分组-->
+    <item android:title="我的">
+        <menu>
+            <item android:id="@+id/group_1" android:title="管理我的糗事"></item>
+            <item android:id="@+id/group_2" android:title="我的收藏"></item>
+            <item android:id="@+id/group_3" android:title="设置"></item>
+            <item android:id="@+id/group_4" android:title="退出"></item>
+        </menu>
+    </item>
+</menu>
